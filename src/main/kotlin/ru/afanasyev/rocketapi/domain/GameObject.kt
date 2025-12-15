@@ -1,6 +1,6 @@
 package ru.afanasyev.rocketapi.domain
 
-data class GameObject(
-    val id: Long? = null,
+open class GameObject(
     val position: ObjectPosition? = null,
+    val name: String? = null,
 )
