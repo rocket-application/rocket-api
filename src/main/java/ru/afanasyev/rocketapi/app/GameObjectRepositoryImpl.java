@@ -20,7 +20,7 @@ public class GameObjectRepositoryImpl implements GameObjectRepository {
     }
 
     private GameObject setUpPlayer() {
-        player = new GameObject(new ObjectPosition(1.0, 1.0), "Player");
+        player = new GameObject(new ObjectPosition(1.0, 1.0), "Player",new ObjectPosition(1.0, 1.0),1000.0);
         return player;
     }
 

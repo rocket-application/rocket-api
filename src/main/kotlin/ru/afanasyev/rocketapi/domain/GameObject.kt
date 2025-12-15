@@ -1,6 +1,8 @@
 package ru.afanasyev.rocketapi.domain
 
 open class GameObject(
-    val position: ObjectPosition? = null,
+    var position: ObjectPosition? = null,
     val name: String? = null,
+    var vector: ObjectPosition? = null,
+    var weight: Double? = null,
 )
