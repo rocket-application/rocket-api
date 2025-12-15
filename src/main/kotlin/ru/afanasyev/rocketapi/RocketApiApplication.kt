@@ -3,11 +3,11 @@ package ru.afanasyev.rocketapi
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.ConfigurableApplicationContext
-import ru.afanasyev.rocketapi.app.DistanceService
+import org.springframework.scheduling.annotation.EnableScheduling
 import ru.afanasyev.rocketapi.app.GameService
-import ru.afanasyev.rocketapi.domain.GameObject
 
 @SpringBootApplication
+@EnableScheduling
 class RocketApiApplication
 
 fun main(args: Array<String>) {

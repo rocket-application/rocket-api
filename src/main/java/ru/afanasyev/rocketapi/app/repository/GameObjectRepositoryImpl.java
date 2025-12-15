@@ -1,6 +1,7 @@
-package ru.afanasyev.rocketapi.app;
+package ru.afanasyev.rocketapi.app.repository;
 
 import org.springframework.stereotype.Component;
+import ru.afanasyev.rocketapi.app.GameObjectRepository;
 import ru.afanasyev.rocketapi.domain.Earth;
 import ru.afanasyev.rocketapi.domain.GameObject;
 import ru.afanasyev.rocketapi.domain.Moon;

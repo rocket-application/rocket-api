@@ -1,6 +1,7 @@
-package ru.afanasyev.rocketapi.app;
+package ru.afanasyev.rocketapi.app.service;
 
 import org.springframework.stereotype.Component;
+import ru.afanasyev.rocketapi.app.DistanceService;
 import ru.afanasyev.rocketapi.domain.GameObject;
 
 @Component
