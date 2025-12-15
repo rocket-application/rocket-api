@@ -5,4 +5,5 @@ open class GameObject(
     val name: String? = null,
     var vector: ObjectPosition? = null,
     var weight: Double? = null,
+    val size: Double? = null,
 )

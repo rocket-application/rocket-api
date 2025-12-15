@@ -23,6 +23,8 @@ public class GameServiceImpl implements GameService {
     @Override
     public double getDistanceToEarth(String gameId) {
         // TODO Папа
-        return 0;
+        GameObject earth = gameObjectRepository.getEarth(gameId);
+        GameObject player = gameObjectRepository.getPlayer(gameId);
+        return distanceService.calculateDistance(player, earth);
     }
 }

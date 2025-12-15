@@ -20,6 +20,7 @@ fun main(args: Array<String>) {
 private fun test(application: ConfigurableApplicationContext) {
     val service = application.getBean(GameService::class.java)
     println(service.getDistanceToMoon("GAME_1"))
+    println(service.getDistanceToEarth("GAME_1"))
 }
 
 
