@@ -5,20 +5,22 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import ru.afanasyev.rocketapi.app.DistanceService;
 import ru.afanasyev.rocketapi.app.GameObjectRepository;
-import ru.afanasyev.rocketapi.app.GameService;
+import ru.afanasyev.rocketapi.app.GameObjectService;
+import ru.afanasyev.rocketapi.app.GameState;
 import ru.afanasyev.rocketapi.domain.GameObject;
+import ru.afanasyev.rocketapi.domain.ObjectPosition;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class GameServiceImpl implements GameService {
-    private static final Logger logger = LoggerFactory.getLogger(GameServiceImpl.class);
+public class GameObjectServiceImpl implements GameObjectService {
+    private static final Logger logger = LoggerFactory.getLogger(GameObjectServiceImpl.class);
 
     private final DistanceService distanceService;
     private final GameObjectRepository gameObjectRepository;
 
-    public GameServiceImpl(DistanceService distanceService, GameObjectRepository gameObjectRepository) {
+    public GameObjectServiceImpl(DistanceService distanceService, GameObjectRepository gameObjectRepository) {
         this.distanceService = distanceService;
         this.gameObjectRepository = gameObjectRepository;
     }
@@ -38,13 +40,27 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public void moveGameObjects(String gameId) {
-        // TODO Папа
-    }
-
-    @Override
     public void printGameObjects(String gameId) {
         List<GameObject> gameObjects = gameObjectRepository.getGameObjects(gameId);
         logger.info(gameObjects.stream().map(GameObject::toString).collect(Collectors.joining(" | ")));
+    }
+
+    @Override
+    public GameState gatGameState(String gameId) {
+        // TODO Папа
+        // Метод получения состояния игры, наполняем данными игры
+        return null;
+    }
+
+    @Override
+    public void moveGameObjects(String gameId) {
+        // TODO Папа
+        // Расчет всех новых позиций движемых обьектов игры
+    }
+
+    @Override
+    public void changePlayerVector(String gameId, ObjectPosition newVector, String playerId) {
+        // TODO Папа
+        // Вытянуть обьект Player по его id, обновить значение vector`а
     }
 }

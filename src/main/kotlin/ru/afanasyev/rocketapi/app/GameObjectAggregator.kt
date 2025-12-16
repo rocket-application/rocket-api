@@ -1,0 +1,14 @@
+package ru.afanasyev.rocketapi.app
+
+import ru.afanasyev.rocketapi.domain.GameObject
+import ru.afanasyev.rocketapi.domain.Player
+
+class GameObjectAggregator(val source: List<GameObject>) : List<GameObject> by source {
+    fun getPlayer(): Player {
+        return this.first { gameObject -> gameObject is Player } as Player
+    }
+
+    fun getOtherObject(except: GameObject): List<GameObject> {
+        return this.filter { gameObject -> gameObject != except }
+    }
+}

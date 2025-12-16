@@ -1,12 +1,17 @@
 package ru.afanasyev.rocketapi.domain
 
-import ru.afanasyev.rocketapi.domain.GameState.*
+import ru.afanasyev.rocketapi.domain.GameStatus.*
 
 data class Game(
     val gameId: String,
-    val gameState: GameState = INITIALIZED
+    val type: GameType,
+    var gameStatus: GameStatus = INITIALIZED
 )
 
-enum class GameState {
-    INITIALIZED, RUNNING, FINISHED
+enum class GameType {
+    SINGLE
+}
+
+enum class GameStatus {
+    INITIALIZED, RUNNING, PAUSED, FINISHED
 }

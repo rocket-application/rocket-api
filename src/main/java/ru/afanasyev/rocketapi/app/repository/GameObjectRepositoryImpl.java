@@ -2,10 +2,8 @@ package ru.afanasyev.rocketapi.app.repository;
 
 import org.springframework.stereotype.Component;
 import ru.afanasyev.rocketapi.app.GameObjectRepository;
-import ru.afanasyev.rocketapi.domain.Earth;
-import ru.afanasyev.rocketapi.domain.GameObject;
-import ru.afanasyev.rocketapi.domain.Moon;
-import ru.afanasyev.rocketapi.domain.ObjectPosition;
+import ru.afanasyev.rocketapi.app.GameObjectAggregator;
+import ru.afanasyev.rocketapi.domain.*;
 
 import java.util.List;
 import java.util.Map;
@@ -21,13 +19,13 @@ public class GameObjectRepositoryImpl implements GameObjectRepository {
     }
 
     private GameObject setUpPlayer() {
-        player = new GameObject(new ObjectPosition(0.0, 6756320.0), "Player",new ObjectPosition(1.0, 1.0),1000.0,100.0);
+        player = new Player("PLAYER_1", new ObjectPosition(0.0, 6756320.0), "Player",new ObjectPosition(1.0, 1.0),1000.0,100.0);
         return player;
     }
 
     @Override
-    public List<GameObject> getGameObjects(String gameId) {
-        return gameObjects.get(gameId);
+    public GameObjectAggregator getGameObjects(String gameId) {
+        return new GameObjectAggregator(gameObjects.get(gameId));
     }
 
     @Override
