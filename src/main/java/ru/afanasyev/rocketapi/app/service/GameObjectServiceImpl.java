@@ -3,10 +3,10 @@ package ru.afanasyev.rocketapi.app.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import ru.afanasyev.rocketapi.app.DistanceService;
-import ru.afanasyev.rocketapi.app.GameObjectRepository;
-import ru.afanasyev.rocketapi.app.GameObjectService;
-import ru.afanasyev.rocketapi.app.GameState;
+import ru.afanasyev.rocketapi.app.util.DistanceService;
+import ru.afanasyev.rocketapi.app.game.object.GameObjectRepository;
+import ru.afanasyev.rocketapi.app.game.object.GameObjectService;
+import ru.afanasyev.rocketapi.app.game.GameState;
 import ru.afanasyev.rocketapi.domain.GameObject;
 import ru.afanasyev.rocketapi.domain.ObjectPosition;
 

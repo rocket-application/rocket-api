@@ -1,7 +1,7 @@
 package ru.afanasyev.rocketapi.app.service;
 
 import org.springframework.stereotype.Component;
-import ru.afanasyev.rocketapi.app.ObjectCollisionService;
+import ru.afanasyev.rocketapi.app.util.ObjectCollisionService;
 import ru.afanasyev.rocketapi.domain.GameObject;
 
 @Component

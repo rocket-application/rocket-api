@@ -2,9 +2,9 @@ package ru.afanasyev.rocketapi.adapter
 
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
-import ru.afanasyev.rocketapi.app.GameObjectService
-import ru.afanasyev.rocketapi.app.GameState
-import ru.afanasyev.rocketapi.app.GameStateService
+import ru.afanasyev.rocketapi.app.game.`object`.GameObjectService
+import ru.afanasyev.rocketapi.app.game.GameState
+import ru.afanasyev.rocketapi.app.game.GameStateService
 import ru.afanasyev.rocketapi.domain.Game
 import ru.afanasyev.rocketapi.domain.ObjectPosition
 

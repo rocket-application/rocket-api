@@ -1,7 +1,7 @@
 package ru.afanasyev.rocketapi.app.repository;
 
 import org.springframework.stereotype.Component;
-import ru.afanasyev.rocketapi.app.GameRepository;
+import ru.afanasyev.rocketapi.app.game.GameRepository;
 import ru.afanasyev.rocketapi.domain.Game;
 import ru.afanasyev.rocketapi.domain.GameStatus;
 import ru.afanasyev.rocketapi.domain.GameType;

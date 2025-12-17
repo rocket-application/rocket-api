@@ -1,4 +1,4 @@
-package ru.afanasyev.rocketapi.app
+package ru.afanasyev.rocketapi.app.game.`object`
 
 import ru.afanasyev.rocketapi.domain.Earth
 import ru.afanasyev.rocketapi.domain.GameObject

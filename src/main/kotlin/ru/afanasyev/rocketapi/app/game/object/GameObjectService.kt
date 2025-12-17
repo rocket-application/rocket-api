@@ -1,5 +1,6 @@
-package ru.afanasyev.rocketapi.app
+package ru.afanasyev.rocketapi.app.game.`object`
 
+import ru.afanasyev.rocketapi.app.game.GameState
 import ru.afanasyev.rocketapi.domain.ObjectPosition
 
 interface GameObjectService {

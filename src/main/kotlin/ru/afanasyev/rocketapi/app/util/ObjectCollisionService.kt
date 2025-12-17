@@ -1,4 +1,4 @@
-package ru.afanasyev.rocketapi.app
+package ru.afanasyev.rocketapi.app.util
 
 import ru.afanasyev.rocketapi.domain.GameObject
 

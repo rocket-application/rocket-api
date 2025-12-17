@@ -1,4 +1,4 @@
-package ru.afanasyev.rocketapi.app
+package ru.afanasyev.rocketapi.app.game
 
 import ru.afanasyev.rocketapi.domain.Game
 import ru.afanasyev.rocketapi.domain.GameStatus
