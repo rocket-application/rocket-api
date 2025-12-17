@@ -14,11 +14,11 @@ class GameObjectAggregator(val source: List<GameObject>) : List<GameObject> by s
         return this.filter { gameObject -> gameObject != except }
     }
 
-    fun getMoon(gameId: String?): Moon {
+    fun getMoon(): Moon {
         return this.first { it == Moon } as Moon
     }
 
-    fun getEarth(gameId: String?): Earth {
+    fun getEarth(): Earth {
         return this.first { it == Earth } as Earth
     }
 }
