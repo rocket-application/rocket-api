@@ -2,8 +2,8 @@ package ru.afanasyev.rocketapi.app.game
 
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
-import ru.afanasyev.rocketapi.app.game.`object`.GameObjectRepository
-import ru.afanasyev.rocketapi.app.game.`object`.GameObjectService
+import ru.afanasyev.rocketapi.app.game.objects.GameObjectRepository
+import ru.afanasyev.rocketapi.app.game.objects.GameObjectService
 import ru.afanasyev.rocketapi.app.util.ObjectCollisionService
 import ru.afanasyev.rocketapi.domain.Game
 import ru.afanasyev.rocketapi.domain.GameObject

@@ -4,7 +4,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.ConfigurableApplicationContext
 import org.springframework.scheduling.annotation.EnableScheduling
-import ru.afanasyev.rocketapi.app.game.`object`.GameObjectService
+import ru.afanasyev.rocketapi.app.game.objects.GameObjectService
 
 @SpringBootApplication
 @EnableScheduling

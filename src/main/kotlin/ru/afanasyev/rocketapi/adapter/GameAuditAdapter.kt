@@ -3,7 +3,7 @@ package ru.afanasyev.rocketapi.adapter
 import org.slf4j.LoggerFactory
 import org.springframework.context.event.EventListener
 import org.springframework.stereotype.Component
-import ru.afanasyev.rocketapi.app.game.`object`.GameObjectService
+import ru.afanasyev.rocketapi.app.game.objects.GameObjectService
 import ru.afanasyev.rocketapi.app.event.GameStartEvent
 import ru.afanasyev.rocketapi.app.event.GameStatusChangedEvent
 

@@ -1,4 +1,4 @@
-package ru.afanasyev.rocketapi.app.game.`object`
+package ru.afanasyev.rocketapi.app.game.objects
 
 import ru.afanasyev.rocketapi.app.game.GameState
 import ru.afanasyev.rocketapi.domain.ObjectPosition

@@ -1,8 +1,8 @@
 package ru.afanasyev.rocketapi.app.repository;
 
 import org.springframework.stereotype.Component;
-import ru.afanasyev.rocketapi.app.game.object.GameObjectRepository;
-import ru.afanasyev.rocketapi.app.game.object.GameObjectAggregator;
+import ru.afanasyev.rocketapi.app.game.objects.GameObjectRepository;
+import ru.afanasyev.rocketapi.app.game.objects.GameObjectAggregator;
 import ru.afanasyev.rocketapi.domain.*;
 
 import java.util.List;
