@@ -2,6 +2,7 @@ package ru.afanasyev.rocketapi.app.game
 
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
+import ru.afanasyev.rocketapi.app.game.objects.GameObjectAggregator
 import ru.afanasyev.rocketapi.app.game.objects.GameObjectRepository
 import ru.afanasyev.rocketapi.app.game.objects.GameObjectService
 import ru.afanasyev.rocketapi.app.util.ObjectCollisionService
@@ -10,6 +11,7 @@ import ru.afanasyev.rocketapi.domain.GameObject
 import ru.afanasyev.rocketapi.domain.GameStatus.RUNNING
 import ru.afanasyev.rocketapi.domain.GameType.SINGLE
 import ru.afanasyev.rocketapi.domain.Player
+import kotlin.collections.filter
 
 @Component
 class GameEngine(
@@ -42,5 +44,9 @@ class GameEngine(
             .map { objectCollisionService.checkCollision(it, player) }
             .first { it }
         return collisionOccurred
+    }
+
+    private fun GameObjectAggregator.getOtherObject(except: GameObject): List<GameObject> {
+        return this.filter { gameObject -> gameObject != except }
     }
 }

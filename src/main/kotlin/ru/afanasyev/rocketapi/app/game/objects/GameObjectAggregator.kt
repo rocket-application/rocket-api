@@ -10,10 +10,6 @@ class GameObjectAggregator(val source: List<GameObject>) : List<GameObject> by s
         return this.first { gameObject -> gameObject is Player } as Player
     }
 
-    fun getOtherObject(except: GameObject): List<GameObject> {
-        return this.filter { gameObject -> gameObject != except }
-    }
-
     fun getMoon(): Moon {
         return this.first { it == Moon } as Moon
     }
